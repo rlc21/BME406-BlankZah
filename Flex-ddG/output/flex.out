@@ -1,0 +1,1621 @@
+core.init: Checking for fconfig files in pwd and ./rosetta/flags 
+core.init: Rosetta version: PyRosetta4.Release.python39.ubuntu r392 2025.04+release.8ef4ef1eaa 8ef4ef1eaaf6596709534135ef10420829ddc9d6 http://www.pyrosetta.org 2025-01-21T15:59:35
+core.init: Rosetta extras: []
+core.init: command: PyRosetta -ex1 -ex2aro -database /hpc/group/tdunn/hk276/miniconda3/lib/python3.9/site-packages/pyrosetta/database
+basic.random.init_random_generator: 'RNG device' seed mode, using '/dev/urandom', seed=273800588 seed_offset=0 real_seed=273800588
+basic.random.init_random_generator: RandomGenerator:init: Normal mode, seed=273800588 RG_type=mt19937
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBEval.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/DonStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/AccStrength.csv
+core.chemical.GlobalResidueTypeSet: Finished initializing fa_standard residue type set.  Created 985 residue types
+core.chemical.GlobalResidueTypeSet: Total time to initialize 0.964271 seconds.
+basic.io.database: Database file opened: scoring/score_functions/rama/fd/all.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/rama/fd/prepro.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.all.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.gly.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.pro.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.valile.txt
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA_n
+core.scoring.P_AA: shapovalov_lib::shap_p_aa_pp_smooth_level of 1( aka low_smooth ) got activated.
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/shapovalov/10deg/kappa131/a20.prop
+protocols.relax.RelaxScriptManager: Reading relax scripts list from database.
+protocols.relax.RelaxScriptManager: Looking for MonomerRelax2019.txt
+protocols.relax.RelaxScriptManager: ================== Reading script file: /hpc/group/tdunn/hk276/miniconda3/lib/python3.9/site-packages/pyrosetta/database/sampling/relax_scripts/MonomerRelax2019.txt ==================
+protocols.relax.RelaxScriptManager: repeat %%nrepeats%%
+protocols.relax.RelaxScriptManager: coord_cst_weight 1.0
+protocols.relax.RelaxScriptManager: scale:fa_rep 0.040
+protocols.relax.RelaxScriptManager: repack
+protocols.relax.RelaxScriptManager: scale:fa_rep 0.051
+protocols.relax.RelaxScriptManager: min 0.01
+protocols.relax.RelaxScriptManager: coord_cst_weight 0.5
+protocols.relax.RelaxScriptManager: scale:fa_rep 0.265
+protocols.relax.RelaxScriptManager: repack
+protocols.relax.RelaxScriptManager: scale:fa_rep 0.280
+protocols.relax.RelaxScriptManager: min 0.01
+protocols.relax.RelaxScriptManager: coord_cst_weight 0.0
+protocols.relax.RelaxScriptManager: scale:fa_rep 0.559
+protocols.relax.RelaxScriptManager: repack
+protocols.relax.RelaxScriptManager: scale:fa_rep 0.581
+protocols.relax.RelaxScriptManager: min 0.01
+protocols.relax.RelaxScriptManager: coord_cst_weight 0.0
+protocols.relax.RelaxScriptManager: scale:fa_rep 1
+protocols.relax.RelaxScriptManager: repack
+protocols.relax.RelaxScriptManager: min 0.00001
+protocols.relax.RelaxScriptManager: accept_to_best
+protocols.relax.RelaxScriptManager: endrepeat
+core.conformation.Conformation: [ WARNING ] Attempted to determine the residue type set of an empty pose.
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.chemical.GlobalResidueTypeSet: [ WARNING ] Could not find: 'AIP' in pdb components files! Skipping residue...
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+basic.io.database: Database file opened: scoring/score_functions/elec_cp_reps.dat
+core.scoring.elec.util: Read 40 countpair representative atoms
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib_fixes_enable option is true.
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib::shap_dun10_smooth_level of 1( aka lowest_smooth ) got activated.
+core.pack.dunbrack.RotamerLibrary: Binary rotamer library selected: /hpc/group/tdunn/hk276/miniconda3/lib/python3.9/site-packages/pyrosetta/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin
+core.pack.dunbrack.RotamerLibrary: Using Dunbrack library binary file '/hpc/group/tdunn/hk276/miniconda3/lib/python3.9/site-packages/pyrosetta/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin'.
+core.pack.dunbrack.RotamerLibrary: Dunbrack 2010 library took 0.204177 seconds to load from binary
+core.pack.rotamers.SingleLigandRotamerLibrary: Read in 10 rotamers from ./Autoinduced_Peptide_1_rotamers.pdb !
+core.pack.pack_rotamers: built 1 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  76.2884  0  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  76.2884  0  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -662.156  0  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3785 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -678.64  0  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -672.215  0  0  0.02805
+protocols.relax.FastRelax: CMD: min  -806.621  0.892081  0.892081  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -806.621  0.892081  0.892081  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -503.954  0.892081  0.892081  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3456 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -521.455  0.892081  0.892081  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -502.322  0.892081  0.892081  0.154
+protocols.relax.FastRelax: CMD: min  -673.393  0.408884  0.408884  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -673.393  0.408884  0.408884  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -589.066  0.408884  0.408884  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3235 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -589.565  0.408884  0.408884  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -582.922  0.408884  0.408884  0.31955
+protocols.relax.FastRelax: CMD: min  -616.621  0.255011  0.255011  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -616.621  0.255011  0.255011  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -549.652  0.255011  0.255011  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3115 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -549.957  0.255011  0.255011  0.55
+protocols.relax.FastRelax: CMD: min  -570.824  0.338019  0.338019  0.55
+protocols.relax.FastRelax: MRP: 0  -570.824  -570.824  0.338019  0.338019  
+protocols.relax.FastRelax: CMD: accept_to_best  -570.824  0.338019  0.338019  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -570.824  0.338019  0.338019  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 21 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -574.311  0  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -574.311  0  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -671.76  0  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3739 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -679.402  0  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -676.976  0  0  0.02805
+protocols.relax.FastRelax: CMD: min  -790.611  0.971891  0.971891  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -790.611  0.971891  0.971891  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -498.244  0.971891  0.971891  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3471 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -522.945  0.971891  0.971891  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -505.02  0.971891  0.971891  0.154
+protocols.relax.FastRelax: CMD: min  -672.622  0.450326  0.450326  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -672.622  0.450326  0.450326  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -594.376  0.450326  0.450326  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3317 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -597.734  0.450326  0.450326  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -591.556  0.450326  0.450326  0.31955
+protocols.relax.FastRelax: CMD: min  -618.081  0.248757  0.248757  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -618.081  0.248757  0.248757  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -551.732  0.248757  0.248757  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3083 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -551.798  0.248757  0.248757  0.55
+protocols.relax.FastRelax: CMD: min  -576.704  0.0582516  0.0582516  0.55
+protocols.relax.FastRelax: MRP: 0  -576.704  -576.704  0.0582516  0.0582516  
+protocols.relax.FastRelax: CMD: accept_to_best  -576.704  0.0582516  0.0582516  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -576.704  0.0582516  0.0582516  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 7 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -583.911  0  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -583.911  0  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -680.813  0  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3678 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -688.577  0  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -686.156  0  0  0.02805
+protocols.relax.FastRelax: CMD: min  -806.748  1.03376  1.03376  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -806.748  1.03376  1.03376  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -507.508  1.03376  1.03376  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3460 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -524.635  1.03376  1.03376  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -505.403  1.03376  1.03376  0.154
+protocols.relax.FastRelax: CMD: min  -685.643  0.453953  0.453953  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -685.643  0.453953  0.453953  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -605.609  0.453953  0.453953  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3195 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -608.52  0.453953  0.453953  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -602.3  0.453953  0.453953  0.31955
+protocols.relax.FastRelax: CMD: min  -628.176  0.237314  0.237314  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -628.176  0.237314  0.237314  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -561.745  0.237314  0.237314  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3020 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -560.486  0.237314  0.237314  0.55
+protocols.relax.FastRelax: CMD: min  -584.897  0.0564669  0.0564669  0.55
+protocols.relax.FastRelax: MRP: 0  -584.897  -584.897  0.0564669  0.0564669  
+protocols.relax.FastRelax: CMD: accept_to_best  -584.897  0.0564669  0.0564669  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -584.897  0.0564669  0.0564669  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 1 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -473.415  0  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -473.415  0  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -676.726  0  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3694 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -684.369  0  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -680.726  0  0  0.02805
+protocols.relax.FastRelax: CMD: min  -804.006  0.975077  0.975077  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -804.006  0.975077  0.975077  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -513.216  0.975077  0.975077  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3467 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -535.928  0.975077  0.975077  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -517.673  0.975077  0.975077  0.154
+protocols.relax.FastRelax: CMD: min  -681.817  0.46812  0.46812  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -681.817  0.46812  0.46812  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -598.89  0.46812  0.46812  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3265 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -600.015  0.46812  0.46812  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -593.476  0.46812  0.46812  0.31955
+protocols.relax.FastRelax: CMD: min  -621.007  0.256471  0.256471  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -621.007  0.256471  0.256471  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -550.377  0.256471  0.256471  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3056 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -549.764  0.256471  0.256471  0.55
+protocols.relax.FastRelax: CMD: min  -582.062  0.0935152  0.0935152  0.55
+protocols.relax.FastRelax: MRP: 0  -582.062  -582.062  0.0935152  0.0935152  
+protocols.relax.FastRelax: CMD: accept_to_best  -582.062  0.0935152  0.0935152  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -582.062  0.0935152  0.0935152  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 1 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -576.801  0  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -576.801  0  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -671.863  0  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3653 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -679.528  0  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -677.125  0  0  0.02805
+protocols.relax.FastRelax: CMD: min  -794.449  0.978942  0.978942  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -794.449  0.978942  0.978942  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -506.117  0.978942  0.978942  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3445 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -527.708  0.978942  0.978942  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -509.882  0.978942  0.978942  0.154
+protocols.relax.FastRelax: CMD: min  -677.605  0.52844  0.52844  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -677.605  0.52844  0.52844  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -601.562  0.52844  0.52844  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3249 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -604.487  0.52844  0.52844  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -598.565  0.52844  0.52844  0.31955
+protocols.relax.FastRelax: CMD: min  -621.193  0.30107  0.30107  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -621.193  0.30107  0.30107  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -555.836  0.30107  0.30107  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3108 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -556.48  0.30107  0.30107  0.55
+protocols.relax.FastRelax: CMD: min  -578.958  0.249993  0.249993  0.55
+protocols.relax.FastRelax: MRP: 0  -578.958  -578.958  0.249993  0.249993  
+protocols.relax.FastRelax: CMD: accept_to_best  -578.958  0.249993  0.249993  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -578.958  0.249993  0.249993  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 5 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -585.013  0  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -585.013  0  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -681.888  0  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3692 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -689.523  0  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -687.102  0  0  0.02805
+protocols.relax.FastRelax: CMD: min  -802.473  0.958698  0.958698  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -802.473  0.958698  0.958698  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -525.844  0.958698  0.958698  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3483 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -550.856  0.958698  0.958698  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -533.806  0.958698  0.958698  0.154
+protocols.relax.FastRelax: CMD: min  -688.804  0.41161  0.41161  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -688.804  0.41161  0.41161  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -612.385  0.41161  0.41161  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3314 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -613.571  0.41161  0.41161  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -607.564  0.41161  0.41161  0.31955
+protocols.relax.FastRelax: CMD: min  -631.344  0.189448  0.189448  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -631.344  0.189448  0.189448  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -565.318  0.189448  0.189448  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3055 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -565.38  0.189448  0.189448  0.55
+protocols.relax.FastRelax: CMD: min  -585.208  0.00758009  0.00758009  0.55
+protocols.relax.FastRelax: MRP: 0  -585.208  -585.208  0.00758009  0.00758009  
+protocols.relax.FastRelax: CMD: accept_to_best  -585.208  0.00758009  0.00758009  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -585.208  0.00758009  0.00758009  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 12 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -578.069  0.0076261  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -578.069  0.0076261  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -673.658  0.0076261  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3714 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -684.242  0.0076261  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -681.902  0.0076261  0  0.02805
+protocols.relax.FastRelax: CMD: min  -798.023  0.945923  0.943795  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -798.023  0.945923  0.943795  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -513.714  0.945923  0.943795  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3450 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -532.243  0.945923  0.943795  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -514.347  0.945923  0.943795  0.154
+protocols.relax.FastRelax: CMD: min  -682.331  0.424515  0.422316  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -682.331  0.424515  0.422316  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -606.216  0.424515  0.422316  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3272 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -606.705  0.424515  0.422316  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -600.713  0.424515  0.422316  0.31955
+protocols.relax.FastRelax: CMD: min  -622.938  0.214338  0.212446  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -622.938  0.214338  0.212446  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -555.762  0.214338  0.212446  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3073 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -555.927  0.214338  0.212446  0.55
+protocols.relax.FastRelax: CMD: min  -577.171  0.0678141  0.068667  0.55
+protocols.relax.FastRelax: MRP: 0  -577.171  -577.171  0.0678141  0.068667  
+protocols.relax.FastRelax: CMD: accept_to_best  -577.171  0.0678141  0.068667  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -577.171  0.0678141  0.068667  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 29 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -584.423  0.0076261  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -584.423  0.0076261  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -681.209  0.0076261  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3729 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -690.039  0.0076261  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -687.578  0.0076261  0  0.02805
+protocols.relax.FastRelax: CMD: min  -806.079  1.00757  1.00501  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -806.079  1.00757  1.00501  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -517.066  1.00757  1.00501  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3515 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -537.271  1.00757  1.00501  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -519.1  1.00757  1.00501  0.154
+protocols.relax.FastRelax: CMD: min  -688.245  0.475789  0.473007  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -688.245  0.475789  0.473007  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -609.7  0.475789  0.473007  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3345 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -613.646  0.475789  0.473007  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -607.5  0.475789  0.473007  0.31955
+protocols.relax.FastRelax: CMD: min  -630.812  0.249141  0.246477  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -630.812  0.249141  0.246477  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -563.609  0.249141  0.246477  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3064 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -563.972  0.249141  0.246477  0.55
+protocols.relax.FastRelax: CMD: min  -585.575  0.0535466  0.0546439  0.55
+protocols.relax.FastRelax: MRP: 0  -585.575  -585.575  0.0535466  0.0546439  
+protocols.relax.FastRelax: CMD: accept_to_best  -585.575  0.0535466  0.0546439  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -585.575  0.0535466  0.0546439  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -581.796  0.0535441  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -581.796  0.0535441  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -678.226  0.0535441  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3748 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -689.092  0.0535441  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -686.469  0.0535441  0  0.02805
+protocols.relax.FastRelax: CMD: min  -810.158  0.944575  0.943736  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -810.158  0.944575  0.943736  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -528.64  0.944575  0.943736  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3467 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -550.249  0.944575  0.943736  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -532.46  0.944575  0.943736  0.154
+protocols.relax.FastRelax: CMD: min  -690.597  0.479556  0.477514  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -690.597  0.479556  0.477514  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -610.914  0.479556  0.477514  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3326 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -612.809  0.479556  0.477514  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -606.618  0.479556  0.477514  0.31955
+protocols.relax.FastRelax: CMD: min  -630.241  0.257647  0.25475  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -630.241  0.257647  0.25475  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -562.169  0.257647  0.25475  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3174 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -562.199  0.257647  0.25475  0.55
+protocols.relax.FastRelax: CMD: min  -586.609  0.0654685  0.0848185  0.55
+protocols.relax.FastRelax: MRP: 0  -586.609  -586.609  0.0654685  0.0848185  
+protocols.relax.FastRelax: CMD: accept_to_best  -586.609  0.0654685  0.0848185  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -586.609  0.0654685  0.0848185  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 1 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -119.642  0.0654646  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -119.642  0.0654646  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -562.521  0.0654646  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3845 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -570.731  0.0654646  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -564.2  0.0654646  0  0.02805
+protocols.relax.FastRelax: CMD: min  -774.763  0.953341  0.936688  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -774.763  0.953341  0.936688  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -454.632  0.953341  0.936688  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3579 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -473.342  0.953341  0.936688  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -452.895  0.953341  0.936688  0.154
+protocols.relax.FastRelax: CMD: min  -625.54  0.548869  0.530339  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -625.54  0.548869  0.530339  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -520.494  0.548869  0.530339  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3381 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -523.48  0.548869  0.530339  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -515.377  0.548869  0.530339  0.31955
+protocols.relax.FastRelax: CMD: min  -545.637  0.386501  0.368168  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -545.637  0.386501  0.368168  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -445.476  0.386501  0.368168  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3219 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -445.574  0.386501  0.368168  0.55
+protocols.relax.FastRelax: CMD: min  -480.731  0.483161  0.46881  0.55
+protocols.relax.FastRelax: MRP: 0  -480.731  -480.731  0.483161  0.46881  
+protocols.relax.FastRelax: CMD: accept_to_best  -480.731  0.483161  0.46881  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -480.731  0.483161  0.46881  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 108 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -581.932  0.0654646  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -581.932  0.0654646  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -679.357  0.0654646  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3949 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -687.949  0.0654646  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -685.455  0.0654646  0  0.02805
+protocols.relax.FastRelax: CMD: min  -804.715  0.971912  0.95594  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -804.715  0.971912  0.95594  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -517.513  0.971912  0.95594  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3626 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -541.064  0.971912  0.95594  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -523.208  0.971912  0.95594  0.154
+protocols.relax.FastRelax: CMD: min  -683.593  0.470159  0.4532  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -683.593  0.470159  0.4532  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -601.736  0.470159  0.4532  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3420 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -604.453  0.470159  0.4532  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -598.056  0.470159  0.4532  0.31955
+protocols.relax.FastRelax: CMD: min  -628.451  0.225531  0.204092  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -628.451  0.225531  0.204092  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -562.16  0.225531  0.204092  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3320 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -562.197  0.225531  0.204092  0.55
+protocols.relax.FastRelax: CMD: min  -577.667  0.113193  0.0830345  0.55
+protocols.relax.FastRelax: MRP: 0  -577.667  -577.667  0.113193  0.0830345  
+protocols.relax.FastRelax: CMD: accept_to_best  -577.667  0.113193  0.0830345  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -577.667  0.113193  0.0830345  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 23 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -582.791  0.0654646  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -582.791  0.0654646  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -680.105  0.0654646  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3867 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -689.369  0.0654646  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -686.731  0.0654646  0  0.02805
+protocols.relax.FastRelax: CMD: min  -799.83  0.897596  0.879871  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -799.83  0.897596  0.879871  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -527.807  0.897596  0.879871  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3532 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -555.574  0.897596  0.879871  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -539.07  0.897596  0.879871  0.154
+protocols.relax.FastRelax: CMD: min  -690.874  0.416953  0.398971  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -690.874  0.416953  0.398971  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -615.159  0.416953  0.398971  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3289 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -615.488  0.416953  0.398971  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -609.58  0.416953  0.398971  0.31955
+protocols.relax.FastRelax: CMD: min  -629.659  0.22241  0.202413  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -629.659  0.22241  0.202413  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -561.672  0.22241  0.202413  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3198 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -561.763  0.22241  0.202413  0.55
+protocols.relax.FastRelax: CMD: min  -581.662  0.0933545  0.0665207  0.55
+protocols.relax.FastRelax: MRP: 0  -581.662  -581.662  0.0933545  0.0665207  
+protocols.relax.FastRelax: CMD: accept_to_best  -581.662  0.0933545  0.0665207  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -581.662  0.0933545  0.0665207  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 1 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -504.647  0.0654646  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -504.647  0.0654646  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -675.11  0.0654646  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3929 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -683.353  0.0654646  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -680.016  0.0654646  0  0.02805
+protocols.relax.FastRelax: CMD: min  -800.761  0.958653  0.942511  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -800.761  0.958653  0.942511  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -518.796  0.958653  0.942511  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3628 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -532.88  0.958653  0.942511  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -514.739  0.958653  0.942511  0.154
+protocols.relax.FastRelax: CMD: min  -674.545  0.480575  0.463294  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -674.545  0.480575  0.463294  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -588.632  0.480575  0.463294  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3344 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -590.674  0.480575  0.463294  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -583.998  0.480575  0.463294  0.31955
+protocols.relax.FastRelax: CMD: min  -619.711  0.246593  0.227444  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -619.711  0.246593  0.227444  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -552.325  0.246593  0.227444  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3257 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -552.527  0.246593  0.227444  0.55
+protocols.relax.FastRelax: CMD: min  -576.287  0.128954  0.111274  0.55
+protocols.relax.FastRelax: MRP: 0  -576.287  -576.287  0.128954  0.111274  
+protocols.relax.FastRelax: CMD: accept_to_best  -576.287  0.128954  0.111274  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -576.287  0.128954  0.111274  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -582.562  0.0654646  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -582.562  0.0654646  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -679.617  0.0654646  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3852 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -687.84  0.0654646  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -685.353  0.0654646  0  0.02805
+protocols.relax.FastRelax: CMD: min  -802.319  0.952766  0.936522  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -802.319  0.952766  0.936522  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -510.19  0.952766  0.936522  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3597 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -535.131  0.952766  0.936522  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -516.951  0.952766  0.936522  0.154
+protocols.relax.FastRelax: CMD: min  -684.194  0.442141  0.425804  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -684.194  0.442141  0.425804  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -604.334  0.442141  0.425804  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3404 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -606.237  0.442141  0.425804  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -600.032  0.442141  0.425804  0.31955
+protocols.relax.FastRelax: CMD: min  -626.467  0.233462  0.215007  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -626.467  0.233462  0.215007  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -559.649  0.233462  0.215007  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3225 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -559.677  0.233462  0.215007  0.55
+protocols.relax.FastRelax: CMD: min  -583.56  0.0958179  0.0755729  0.55
+protocols.relax.FastRelax: MRP: 0  -583.56  -583.56  0.0958179  0.0755729  
+protocols.relax.FastRelax: CMD: accept_to_best  -583.56  0.0958179  0.0755729  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -583.56  0.0958179  0.0755729  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 1 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  810.442  0.0654646  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  810.442  0.0654646  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -646.719  0.0654646  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3903 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -672.547  0.0654646  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -659.486  0.0654646  0  0.02805
+protocols.relax.FastRelax: CMD: min  -782.979  0.982125  0.965753  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -782.979  0.982125  0.965753  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -441.907  0.982125  0.965753  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3561 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -484.129  0.982125  0.965753  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -463.611  0.982125  0.965753  0.154
+protocols.relax.FastRelax: CMD: min  -662.117  0.77252  0.758789  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -662.117  0.77252  0.758789  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -578.339  0.77252  0.758789  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3357 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -580.592  0.77252  0.758789  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -574.061  0.77252  0.758789  0.31955
+protocols.relax.FastRelax: CMD: min  -601.476  0.707401  0.69764  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -601.476  0.707401  0.69764  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -530.444  0.707401  0.69764  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3208 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -530.463  0.707401  0.69764  0.55
+protocols.relax.FastRelax: CMD: min  -560.975  0.660763  0.655004  0.55
+protocols.relax.FastRelax: MRP: 0  -560.975  -560.975  0.660763  0.655004  
+protocols.relax.FastRelax: CMD: accept_to_best  -560.975  0.660763  0.655004  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -560.975  0.660763  0.655004  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 3 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -584.587  0.0654646  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -584.587  0.0654646  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -682.265  0.0654646  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3827 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -690.444  0.0654646  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -687.951  0.0654646  0  0.02805
+protocols.relax.FastRelax: CMD: min  -815.358  0.995587  0.980226  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -815.358  0.995587  0.980226  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -528.781  0.995587  0.980226  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3542 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -540.288  0.995587  0.980226  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -521.573  0.995587  0.980226  0.154
+protocols.relax.FastRelax: CMD: min  -691.187  0.484353  0.467894  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -691.187  0.484353  0.467894  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -610.618  0.484353  0.467894  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3277 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -612.323  0.484353  0.467894  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -606.058  0.484353  0.467894  0.31955
+protocols.relax.FastRelax: CMD: min  -630.059  0.266395  0.249866  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -630.059  0.266395  0.249866  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -561.248  0.266395  0.249866  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3156 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -561.345  0.266395  0.249866  0.55
+protocols.relax.FastRelax: CMD: min  -585.139  0.0743459  0.0449344  0.55
+protocols.relax.FastRelax: MRP: 0  -585.139  -585.139  0.0743459  0.0449344  
+protocols.relax.FastRelax: CMD: accept_to_best  -585.139  0.0743459  0.0449344  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -585.139  0.0743459  0.0449344  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 14 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -585.798  0.0654646  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -585.798  0.0654646  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -684.32  0.0654646  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3778 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -692.334  0.0654646  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -689.766  0.0654646  0  0.02805
+protocols.relax.FastRelax: CMD: min  -817.424  1.01279  0.9972  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -817.424  1.01279  0.9972  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -520.94  1.01279  0.9972  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3474 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -536.302  1.01279  0.9972  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -517.274  1.01279  0.9972  0.154
+protocols.relax.FastRelax: CMD: min  -692.944  0.476818  0.460551  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -692.944  0.476818  0.460551  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -612.994  0.476818  0.460551  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3344 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -615.208  0.476818  0.460551  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -608.988  0.476818  0.460551  0.31955
+protocols.relax.FastRelax: CMD: min  -631.44  0.263048  0.245875  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -631.44  0.263048  0.245875  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -561.765  0.263048  0.245875  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3111 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -561.862  0.263048  0.245875  0.55
+protocols.relax.FastRelax: CMD: min  -588.297  0.107972  0.0931112  0.55
+protocols.relax.FastRelax: MRP: 0  -588.297  -588.297  0.107972  0.0931112  
+protocols.relax.FastRelax: CMD: accept_to_best  -588.297  0.107972  0.0931112  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -588.297  0.107972  0.0931112  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 6 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -585.916  0.107958  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -585.916  0.107958  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -684.416  0.107958  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3725 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -695.577  0.107958  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -693.201  0.107958  0  0.02805
+protocols.relax.FastRelax: CMD: min  -824.083  1.01941  0.984235  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -824.083  1.01941  0.984235  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -545.199  1.01941  0.984235  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3414 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -553.687  1.01941  0.984235  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -535.367  1.01941  0.984235  0.154
+protocols.relax.FastRelax: CMD: min  -693.527  0.526519  0.487746  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -693.527  0.526519  0.487746  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -610.985  0.526519  0.487746  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3297 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -612.867  0.526519  0.487746  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -606.544  0.526519  0.487746  0.31955
+protocols.relax.FastRelax: CMD: min  -632.555  0.297627  0.258287  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -632.555  0.297627  0.258287  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -560.718  0.297627  0.258287  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3059 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -560.844  0.297627  0.258287  0.55
+protocols.relax.FastRelax: CMD: min  -588.696  0.132833  0.0767507  0.55
+protocols.relax.FastRelax: MRP: 0  -588.696  -588.696  0.132833  0.0767507  
+protocols.relax.FastRelax: CMD: accept_to_best  -588.696  0.132833  0.0767507  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -588.696  0.132833  0.0767507  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 82 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -586.543  0.132858  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -586.543  0.132858  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -684.902  0.132858  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3823 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -695.012  0.132858  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -692.819  0.132858  0  0.02805
+protocols.relax.FastRelax: CMD: min  -805.589  0.947821  0.890179  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -805.589  0.947821  0.890179  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -533.497  0.947821  0.890179  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3532 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -565.407  0.947821  0.890179  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -549.248  0.947821  0.890179  0.154
+protocols.relax.FastRelax: CMD: min  -687.291  0.48949  0.423783  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -687.291  0.48949  0.423783  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -608.156  0.48949  0.423783  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3233 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -613.697  0.48949  0.423783  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -607.476  0.48949  0.423783  0.31955
+protocols.relax.FastRelax: CMD: min  -634.236  0.275295  0.206309  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -634.236  0.275295  0.206309  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -567.519  0.275295  0.206309  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3125 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -567.654  0.275295  0.206309  0.55
+protocols.relax.FastRelax: CMD: min  -581.671  0.162853  0.10395  0.55
+protocols.relax.FastRelax: MRP: 0  -581.671  -581.671  0.162853  0.10395  
+protocols.relax.FastRelax: CMD: accept_to_best  -581.671  0.162853  0.10395  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -581.671  0.162853  0.10395  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 31 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -587.646  0.132858  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -587.646  0.132858  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -688.27  0.132858  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3741 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -697.376  0.132858  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -695.074  0.132858  0  0.02805
+protocols.relax.FastRelax: CMD: min  -819.837  1.00061  0.943265  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -819.837  1.00061  0.943265  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -525.005  1.00061  0.943265  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3433 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -541.224  1.00061  0.943265  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -522.511  1.00061  0.943265  0.154
+protocols.relax.FastRelax: CMD: min  -695.491  0.515111  0.448022  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -695.491  0.515111  0.448022  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -615.525  0.515111  0.448022  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3212 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -618.122  0.515111  0.448022  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -611.843  0.515111  0.448022  0.31955
+protocols.relax.FastRelax: CMD: min  -635.687  0.278226  0.204152  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -635.687  0.278226  0.204152  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -568  0.278226  0.204152  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3060 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -566.294  0.278226  0.204152  0.55
+protocols.relax.FastRelax: CMD: min  -590.623  0.123269  0.0832359  0.55
+protocols.relax.FastRelax: MRP: 0  -590.623  -590.623  0.123269  0.0832359  
+protocols.relax.FastRelax: CMD: accept_to_best  -590.623  0.123269  0.0832359  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -590.623  0.123269  0.0832359  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 12 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -579.496  0.123296  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -579.496  0.123296  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -674.803  0.123296  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3756 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -685.259  0.123296  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -682.957  0.123296  0  0.02805
+protocols.relax.FastRelax: CMD: min  -802.471  0.941534  0.912594  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -802.471  0.941534  0.912594  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -533.536  0.941534  0.912594  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3406 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -548.368  0.941534  0.912594  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -531.112  0.941534  0.912594  0.154
+protocols.relax.FastRelax: CMD: min  -684.362  0.474617  0.442714  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -684.362  0.474617  0.442714  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -605.383  0.474617  0.442714  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3224 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -605.986  0.474617  0.442714  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -599.839  0.474617  0.442714  0.31955
+protocols.relax.FastRelax: CMD: min  -624.586  0.266331  0.237114  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -624.586  0.266331  0.237114  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -557.809  0.266331  0.237114  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3130 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -557.968  0.266331  0.237114  0.55
+protocols.relax.FastRelax: CMD: min  -580.897  0.134116  0.118427  0.55
+protocols.relax.FastRelax: MRP: 0  -580.897  -580.897  0.134116  0.118427  
+protocols.relax.FastRelax: CMD: accept_to_best  -580.897  0.134116  0.118427  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -580.897  0.134116  0.118427  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 3 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -585.852  0.123296  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -585.852  0.123296  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -683.176  0.123296  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3750 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -694.039  0.123296  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -691.535  0.123296  0  0.02805
+protocols.relax.FastRelax: CMD: min  -810.842  0.946803  0.91712  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -810.842  0.946803  0.91712  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -543.457  0.946803  0.91712  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3425 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -560.437  0.946803  0.91712  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -543.591  0.946803  0.91712  0.154
+protocols.relax.FastRelax: CMD: min  -690.073  0.47083  0.440388  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -690.073  0.47083  0.440388  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -611.374  0.47083  0.440388  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3206 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -612.988  0.47083  0.440388  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -606.795  0.47083  0.440388  0.31955
+protocols.relax.FastRelax: CMD: min  -633.809  0.255388  0.22262  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -633.809  0.255388  0.22262  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -569.104  0.255388  0.22262  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3084 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -569.259  0.255388  0.22262  0.55
+protocols.relax.FastRelax: CMD: min  -588.64  0.137811  0.092041  0.55
+protocols.relax.FastRelax: MRP: 0  -588.64  -588.64  0.137811  0.092041  
+protocols.relax.FastRelax: CMD: accept_to_best  -588.64  0.137811  0.092041  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -588.64  0.137811  0.092041  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 1 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  125.332  0.123296  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  125.332  0.123296  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -662.96  0.123296  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3791 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -678.506  0.123296  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -669.875  0.123296  0  0.02805
+protocols.relax.FastRelax: CMD: min  -793.086  0.833536  0.809977  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -793.086  0.833536  0.809977  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -512.281  0.833536  0.809977  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3493 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -538.136  0.833536  0.809977  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -521.064  0.833536  0.809977  0.154
+protocols.relax.FastRelax: CMD: min  -669.898  0.449164  0.418471  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -669.898  0.449164  0.418471  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -589.14  0.449164  0.418471  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3396 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -593.208  0.449164  0.418471  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -586.87  0.449164  0.418471  0.31955
+protocols.relax.FastRelax: CMD: min  -617.79  0.328679  0.307385  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -617.79  0.328679  0.307385  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -551.433  0.328679  0.307385  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3199 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -551.654  0.328679  0.307385  0.55
+protocols.relax.FastRelax: CMD: min  -572.018  0.36548  0.362538  0.55
+protocols.relax.FastRelax: MRP: 0  -572.018  -572.018  0.36548  0.362538  
+protocols.relax.FastRelax: CMD: accept_to_best  -572.018  0.36548  0.362538  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -572.018  0.36548  0.362538  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 1 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  227.909  0.123296  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  227.909  0.123296  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -654.105  0.123296  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3776 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -668.363  0.123296  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -659.266  0.123296  0  0.02805
+protocols.relax.FastRelax: CMD: min  -799.604  0.968281  0.942979  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -799.604  0.968281  0.942979  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -486.571  0.968281  0.942979  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3456 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -503.993  0.968281  0.942979  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -483.69  0.968281  0.942979  0.154
+protocols.relax.FastRelax: CMD: min  -677.178  0.65772  0.642826  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -677.178  0.65772  0.642826  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -597.725  0.65772  0.642826  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3217 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -599.085  0.65772  0.642826  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -592.82  0.65772  0.642826  0.31955
+protocols.relax.FastRelax: CMD: min  -614.644  0.568726  0.56154  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -614.644  0.568726  0.56154  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -543.674  0.568726  0.56154  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3027 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -543.179  0.568726  0.56154  0.55
+protocols.relax.FastRelax: CMD: min  -570.844  0.596595  0.590883  0.55
+protocols.relax.FastRelax: MRP: 0  -570.844  -570.844  0.596595  0.590883  
+protocols.relax.FastRelax: CMD: accept_to_best  -570.844  0.596595  0.590883  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -570.844  0.596595  0.590883  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 31 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -593.319  0.123296  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -593.319  0.123296  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -690.096  0.123296  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3811 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -700.139  0.123296  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -697.656  0.123296  0  0.02805
+protocols.relax.FastRelax: CMD: min  -810.499  0.92058  0.892101  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -810.499  0.92058  0.892101  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -539.085  0.92058  0.892101  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3502 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -564.563  0.92058  0.892101  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -547.892  0.92058  0.892101  0.154
+protocols.relax.FastRelax: CMD: min  -695.94  0.45973  0.424395  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -695.94  0.45973  0.424395  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -617.303  0.45973  0.424395  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3268 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -619.833  0.45973  0.424395  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -613.651  0.45973  0.424395  0.31955
+protocols.relax.FastRelax: CMD: min  -638.377  0.246626  0.204149  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -638.377  0.246626  0.204149  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -571.551  0.246626  0.204149  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3114 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -571.625  0.246626  0.204149  0.55
+protocols.relax.FastRelax: CMD: min  -594.131  0.116129  0.052136  0.55
+protocols.relax.FastRelax: MRP: 0  -594.131  -594.131  0.116129  0.052136  
+protocols.relax.FastRelax: CMD: accept_to_best  -594.131  0.116129  0.052136  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -594.131  0.116129  0.052136  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 1 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -560.059  0.116159  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -560.059  0.116159  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -691.715  0.116159  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3842 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -700.468  0.116159  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -697.81  0.116159  0  0.02805
+protocols.relax.FastRelax: CMD: min  -820.917  0.983034  0.958775  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -820.917  0.983034  0.958775  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -527.921  0.983034  0.958775  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3493 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -541.185  0.983034  0.958775  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -522.072  0.983034  0.958775  0.154
+protocols.relax.FastRelax: CMD: min  -694.803  0.470486  0.43903  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -694.803  0.470486  0.43903  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -611.295  0.470486  0.43903  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3208 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -613.704  0.470486  0.43903  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -607.173  0.470486  0.43903  0.31955
+protocols.relax.FastRelax: CMD: min  -637.508  0.262813  0.231304  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -637.508  0.262813  0.231304  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -569.867  0.262813  0.231304  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3125 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -570.018  0.262813  0.231304  0.55
+protocols.relax.FastRelax: CMD: min  -591.91  0.150121  0.0848059  0.55
+protocols.relax.FastRelax: MRP: 0  -591.91  -591.91  0.150121  0.0848059  
+protocols.relax.FastRelax: CMD: accept_to_best  -591.91  0.150121  0.0848059  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -591.91  0.150121  0.0848059  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 9 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -587.884  0.116159  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -587.884  0.116159  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -684.403  0.116159  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3839 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -695.659  0.116159  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -693.413  0.116159  0  0.02805
+protocols.relax.FastRelax: CMD: min  -821.129  1.01933  0.990158  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -821.129  1.01933  0.990158  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -539.475  1.01933  0.990158  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3476 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -554.498  1.01933  0.990158  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -536.556  1.01933  0.990158  0.154
+protocols.relax.FastRelax: CMD: min  -694.859  0.54834  0.518249  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -694.859  0.54834  0.518249  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -613.604  0.54834  0.518249  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3287 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -615.009  0.54834  0.518249  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -608.666  0.54834  0.518249  0.31955
+protocols.relax.FastRelax: CMD: min  -632.969  0.306985  0.274962  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -632.969  0.306985  0.274962  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -562.267  0.306985  0.274962  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3133 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -562.695  0.306985  0.274962  0.55
+protocols.relax.FastRelax: CMD: min  -586.184  0.142266  0.0960309  0.55
+protocols.relax.FastRelax: MRP: 0  -586.184  -586.184  0.142266  0.0960309  
+protocols.relax.FastRelax: CMD: accept_to_best  -586.184  0.142266  0.0960309  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -586.184  0.142266  0.0960309  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 3 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -594.049  0.116159  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -594.049  0.116159  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -691.302  0.116159  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3833 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -700.229  0.116159  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -697.69  0.116159  0  0.02805
+protocols.relax.FastRelax: CMD: min  -819.421  0.964125  0.93505  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -819.421  0.964125  0.93505  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -551.629  0.964125  0.93505  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3453 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -567.845  0.964125  0.93505  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -550.952  0.964125  0.93505  0.154
+protocols.relax.FastRelax: CMD: min  -696.201  0.503242  0.466395  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -696.201  0.503242  0.466395  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -615.294  0.503242  0.466395  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3276 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -617.547  0.503242  0.466395  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -611.184  0.503242  0.466395  0.31955
+protocols.relax.FastRelax: CMD: min  -639.792  0.268337  0.233902  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -639.792  0.268337  0.233902  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -573.129  0.268337  0.233902  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3121 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -573.168  0.268337  0.233902  0.55
+protocols.relax.FastRelax: CMD: min  -591.903  0.130126  0.0775672  0.55
+protocols.relax.FastRelax: MRP: 0  -591.903  -591.903  0.130126  0.0775672  
+protocols.relax.FastRelax: CMD: accept_to_best  -591.903  0.130126  0.0775672  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -591.903  0.130126  0.0775672  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 1 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -569.011  0.116159  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -569.011  0.116159  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -686.995  0.116159  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3839 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -696.722  0.116159  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -694.164  0.116159  0  0.02805
+protocols.relax.FastRelax: CMD: min  -819.212  0.9831  0.959723  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -819.212  0.9831  0.959723  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -528.709  0.9831  0.959723  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3478 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -541.249  0.9831  0.959723  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -522.149  0.9831  0.959723  0.154
+protocols.relax.FastRelax: CMD: min  -699.83  0.477547  0.452729  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -699.83  0.477547  0.452729  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -617.924  0.477547  0.452729  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3290 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -618.383  0.477547  0.452729  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -611.981  0.477547  0.452729  0.31955
+protocols.relax.FastRelax: CMD: min  -635.638  0.286663  0.258983  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -635.638  0.286663  0.258983  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -563.904  0.286663  0.258983  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3131 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -564.062  0.286663  0.258983  0.55
+protocols.relax.FastRelax: CMD: min  -591.144  0.148189  0.0860303  0.55
+protocols.relax.FastRelax: MRP: 0  -591.144  -591.144  0.148189  0.0860303  
+protocols.relax.FastRelax: CMD: accept_to_best  -591.144  0.148189  0.0860303  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -591.144  0.148189  0.0860303  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 1 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -205.443  0.116159  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -205.443  0.116159  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -678.424  0.116159  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3875 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -687.643  0.116159  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -680.433  0.116159  0  0.02805
+protocols.relax.FastRelax: CMD: min  -795.744  0.908937  0.881523  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -795.744  0.908937  0.881523  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -476.574  0.908937  0.881523  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3440 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -506.439  0.908937  0.881523  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -487.041  0.908937  0.881523  0.154
+protocols.relax.FastRelax: CMD: min  -674.9  0.430162  0.411765  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -674.9  0.430162  0.411765  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -595.103  0.430162  0.411765  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3235 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -599.118  0.430162  0.411765  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -592.867  0.430162  0.411765  0.31955
+protocols.relax.FastRelax: CMD: min  -617.003  0.250981  0.247471  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -617.003  0.250981  0.247471  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -547.023  0.250981  0.247471  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 2935 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -547.319  0.250981  0.247471  0.55
+protocols.relax.FastRelax: CMD: min  -575.203  0.312456  0.330503  0.55
+protocols.relax.FastRelax: MRP: 0  -575.203  -575.203  0.312456  0.330503  
+protocols.relax.FastRelax: CMD: accept_to_best  -575.203  0.312456  0.330503  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -575.203  0.312456  0.330503  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 1 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -585.468  0.116159  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -585.468  0.116159  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -681.412  0.116159  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3771 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -690.921  0.116159  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -688.675  0.116159  0  0.02805
+protocols.relax.FastRelax: CMD: min  -811.324  0.962386  0.938836  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -811.324  0.962386  0.938836  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -536.429  0.962386  0.938836  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3467 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -551.145  0.962386  0.938836  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -533.459  0.962386  0.938836  0.154
+protocols.relax.FastRelax: CMD: min  -690.038  0.458584  0.434346  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -690.038  0.458584  0.434346  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -608.041  0.458584  0.434346  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3161 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -609.208  0.458584  0.434346  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -602.759  0.458584  0.434346  0.31955
+protocols.relax.FastRelax: CMD: min  -631.717  0.260247  0.235626  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -631.717  0.260247  0.235626  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -563.095  0.260247  0.235626  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3062 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -563.125  0.260247  0.235626  0.55
+protocols.relax.FastRelax: CMD: min  -582.774  0.14658  0.113748  0.55
+protocols.relax.FastRelax: MRP: 0  -582.774  -582.774  0.14658  0.113748  
+protocols.relax.FastRelax: CMD: accept_to_best  -582.774  0.14658  0.113748  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -582.774  0.14658  0.113748  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 1 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -585.601  0.116159  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -585.601  0.116159  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -686.964  0.116159  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3835 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -695.695  0.116159  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -693.109  0.116159  0  0.02805
+protocols.relax.FastRelax: CMD: min  -813.642  1.01248  0.986254  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -813.642  1.01248  0.986254  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -529.075  1.01248  0.986254  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3487 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -547.052  1.01248  0.986254  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -528.881  1.01248  0.986254  0.154
+protocols.relax.FastRelax: CMD: min  -691.677  0.507964  0.477118  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -691.677  0.507964  0.477118  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -608.85  0.507964  0.477118  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3332 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -611.802  0.507964  0.477118  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -605.319  0.507964  0.477118  0.31955
+protocols.relax.FastRelax: CMD: min  -633.075  0.272756  0.241558  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -633.075  0.272756  0.241558  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -563.383  0.272756  0.241558  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3134 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -563.367  0.272756  0.241558  0.55
+protocols.relax.FastRelax: CMD: min  -590.693  0.128572  0.0579159  0.55
+protocols.relax.FastRelax: MRP: 0  -590.693  -590.693  0.128572  0.0579159  
+protocols.relax.FastRelax: CMD: accept_to_best  -590.693  0.128572  0.0579159  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -590.693  0.128572  0.0579159  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 1 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -397.421  0.116159  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -397.421  0.116159  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -687.346  0.116159  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3923 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -698.985  0.116159  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -694.708  0.116159  0  0.02805
+protocols.relax.FastRelax: CMD: min  -818.931  0.946448  0.917412  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -818.931  0.946448  0.917412  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -533.753  0.946448  0.917412  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3555 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -547.864  0.946448  0.917412  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -529.633  0.946448  0.917412  0.154
+protocols.relax.FastRelax: CMD: min  -689.557  0.490436  0.453559  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -689.557  0.490436  0.453559  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -604.793  0.490436  0.453559  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3365 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -606.729  0.490436  0.453559  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -600.072  0.490436  0.453559  0.31955
+protocols.relax.FastRelax: CMD: min  -630.522  0.293382  0.26027  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -630.522  0.293382  0.26027  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -561.547  0.293382  0.26027  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3094 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -561.684  0.293382  0.26027  0.55
+protocols.relax.FastRelax: CMD: min  -585.784  0.181717  0.1349  0.55
+protocols.relax.FastRelax: MRP: 0  -585.784  -585.784  0.181717  0.1349  
+protocols.relax.FastRelax: CMD: accept_to_best  -585.784  0.181717  0.1349  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -585.784  0.181717  0.1349  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.import_pose.import_pose: File './flexddg_run.pdb' automatically determined to be of type PDB
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 1 rotamers at 1 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating PDInteractionGraph
+protocols.relax.FastRelax: CMD: repeat  -430.236  0.116159  0  0.55
+protocols.relax.FastRelax: CMD: coord_cst_weight  -430.236  0.116159  0  0.55
+protocols.relax.FastRelax: CMD: scale:fa_rep  -686.067  0.116159  0  0.022
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3941 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -694.304  0.116159  0  0.022
+protocols.relax.FastRelax: CMD: scale:fa_rep  -689.816  0.116159  0  0.02805
+protocols.relax.FastRelax: CMD: min  -808.05  0.977455  0.949777  0.02805
+protocols.relax.FastRelax: CMD: coord_cst_weight  -808.05  0.977455  0.949777  0.02805
+protocols.relax.FastRelax: CMD: scale:fa_rep  -522.532  0.977455  0.949777  0.14575
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3566 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -543.201  0.977455  0.949777  0.14575
+protocols.relax.FastRelax: CMD: scale:fa_rep  -525.191  0.977455  0.949777  0.154
+protocols.relax.FastRelax: CMD: min  -694.683  0.49945  0.477181  0.154
+protocols.relax.FastRelax: CMD: coord_cst_weight  -694.683  0.49945  0.477181  0.154
+protocols.relax.FastRelax: CMD: scale:fa_rep  -616.009  0.49945  0.477181  0.30745
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3342 rotamers at 158 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+protocols.relax.FastRelax: CMD: repack  -617.427  0.49945  0.477181  0.30745
+protocols.relax.FastRelax: CMD: scale:fa_rep  -611.257  0.49945  0.477181  0.31955
+protocols.relax.FastRelax: CMD: min  -637.239  0.30295  0.278139  0.31955
+protocols.relax.FastRelax: CMD: coord_cst_weight  -637.239  0.30295  0.278139  0.31955
+protocols.relax.FastRelax: CMD: scale:fa_rep  -571.126  0.30295  0.278139  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamers.SingleLigandRotamerLibrary: Added 10 rotamers for AIP
+core.pack.pack_rotamers: built 3227 rotamers at 158 positions.
+core.p
